@@ -1,3 +1,30 @@
 body{
-  background: red;
+  background: ;
+}
+
+.footer{
+  text-align: center;
+}
+
+.section{
+  padding: 2%;
+  margin-bottom: 5%;
+}
+
+.section div{
+  margin-bottom: 2%;
+}
+
+#codes{
+  font-family: Courier;
+}
+
+p{
+  text-align: justify;
+}
+
+#quote{
+  background-color: #f2f2f2;
+  padding: 3%;
+  clear: both;
 }
