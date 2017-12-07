@@ -5,62 +5,90 @@
     <link rel="stylesheet" href="./stylesheets/styles.css" />
   </head>
   <body>
-      <div class="row">
-        <div class="footer col-xs-12 col-md-12 col-lg-12" id="">
-          <nav class="navbar navbar-default col-xs-12 col-md-12">
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-              <a class="navbar-brand" href="/">Javascript</a>
-            </div>
-            <div class="navbar-collapse collapse">
-              <ul class="nav navbar-nav navbar-right">
-                <li><a href="variables">variables</a></li>
-                <li><a href="link2">Link2</a></li>
-                <li><a href="link3">Link3</a></li>
-                <li><a href="link4">Link4</a></li>
-              </ul>
-            </div><!--/collapse-->
-            <!--/.nav-collapse -->
-          </nav>
-        </div>
-      </div><!--/TOP ROW-->
+    <div class="row">
+      <div class="footer col-xs-12 col-md-12 col-lg-12" id="">
+        <nav class="navbar navbar-default col-xs-12 col-md-12">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">JavavScript</a>
+          </div>
+          <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="">LANGUAGE</a>
+                <!-- <ul>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                </ul> -->
+              </li>
+              <li><a href="link2">BROWSER</a>
+                <!-- <ul>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li> -->
+                  <!-- <li></li> -->
+                <!-- </ul> -->
+              <!-- </li> -->
+              <li><a href="link3">BACK-END</a>
+                <!-- <ul>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                </ul> -->
+              </li>
+              <li><a href="link3">EXERCISES</a></li>
+            </ul>
+          </div><!--/collapse-->
+          <!--/.nav-collapse -->
+        </nav>
+      </div>
+    </div><!--/NAV ROW-->
     <div class="container-fluid">
       <div class="row">
-        <div class="section col-xs-12 col-md-12 col-lg-12" id="introdution">
-          <h2>INTRODUCTION</h2>
-          <div class="col-xs-12 col-md-12 col-lg-12">
-            <div class="col-xs-12 col-md-4 col-lg-4">
-              <h3>Overview</h3>
-              The tutorial will be comprised of three sections: <br>
-              - The language <br>
-              - The browser <br>
-              - The backend <br>
-            </div>
-          </div>
-
-          <div class="col-xs-12 col-md-12 col-lg-12">
+        <div class="section col-xs-12 col-md-12 col-lg-12" id="introduction">
+          <h1>INTRODUCTION</h1>
+          <div class="col-xs-12 col-md-4 col-lg-4">
+            <h2>Overview</h2>
+            The tutorial will be comprised of three sections: <br>
+            - The language <br>
+            - The browser <br>
+            - The back-end <br>
+          </div><!--/OVERVIEW-->
+          <div class="col-xs-12 col-md-12 col-lg-12" id="definition">
             <div class="col-xs-12 col-md-7 col-lg-7">
-              <h3>Definition</h3>
+              <h2>Definition</h2>
               <p>
-                Javascript is programming language initially created to cater for
+                JavavScript is programming language initially created to cater for
                 interactive webpages including online games, it is primary used in
-                conjunction with HTML and CSS for frontend development. <br> <br>
+                conjunction with HTML and CSS for front-end development. <br> <br>
 
-                All modern web browsers do support Javascript without requiring plug-ins.
-                Javascript purpose is to follow instructions defined by the programmer in a pre-defined
-                senario. <br> <br>
+                All modern web browsers do support JavavScript without requiring plug-ins.
+                JavavScript purpose is to follow instructions defined by the programmer in a pre-defined
+                scenario. <br> <br>
 
-                JavaScript is a: <br>
+                JavavScript is a: <br>
                 <b>- High-level</b> (machine language), are languages that comprise variables, arrays,
                 objects, complex arithmetic, boolean expressions, functions, loops, threads and locks. <br>
-                <b>- Dynamic</b>, types are associtated to values e.g. a variable definition can evolve.
+                <b>- Dynamic</b>, types are associated to values e.g. a variable definition can evolve.
                 It can first be defined as a string then as a number. <br>
-                <b>- Weakly typed</b>, are more lient then strongly typed languages which usually generate
+                <b>- Weakly typed</b>, are more lenient then strongly typed languages which usually generate
                 an error or refuse to compile if the expected type doesn't match. <br>
                 <b>- Prototype-based</b>, it is the action of inheriting from other objects but also maintaining its own attributes.<br>
                 <b>- Multi-paradigm</b>, is simply a way to classify programming languages.<br>
@@ -79,35 +107,305 @@
                     </i> <br>
                     <a href="https://en.wikipedia.org/wiki/Programming_paradigm#Multi-paradigm">read more...</a> <br>
                   </div>
-                <b>- Interpreted</b>, is a progarmming language that doen't require compilation in order to run.<br>
-
+                <b>- Interpreted</b>, is a programming language that doesn't require compilation in order to run.<br>
               </p>
+              <h2>The console.log() Function</h2>
+              <p>Is a useful tool to test JavavScript code snippets on the fly. <br>
+              It is part of the browser and can be opened on Windows or Mac by press F12, Command-Option-1 respectively.</p>
             </div>
-          </div>
-        </div><!--/SECTION-introdution-->
-
+          </div><!--/DEFINITION-->
+        </div><!--/INTRODUCTION-->
 
         <div class="section col-xs-12 col-md-12 col-lg-12" id="language">
-          <h2>LANGUAGE</h2>
-          <div id="variables">
-            <div id="varDef">
+          <h1>1 - LANGUAGE</h1>
+          <div class="col-xs-12 col-md-12 col-lg-12" id="types">
+            <h2>1|1a - Types</h2><br>
+            <table>
+              <th>Type</th><th>Description</th><th>Example</th>
+              <tr><td>Numbers</td><td>-</td><td>14</td></tr>
+              <tr><td>Special Numbers</td><td>Positive and negative infinity</td><td>-1, NaN</td></tr>
+              <tr><td>Strings</td><td>A serie of character representing a text, can also be nunbers</td><td>aString</td></tr>
+              <tr><td>Unary Operators</td><td></td><td>the typeof operator</td></tr>
+              <tr><td>Boolean</td><td>When a "yes" or "no" answer is required</td><td>true / false</td></tr>
+              <tr><td>Logical Operators</td><td>&&</td><td>T && F = flase</td></tr>
+              <tr><td>-</td><td>||</td><td>T || F = true</td>
+              </tr><tr><td>null / undefined</td><td>They don't carry values</td><td>Type has no value</td></tr>
+            </table>
+            <br><br>
 
-              <p></p>
-            </div>
+            <h2>1|1b - Automatic Type Conversion</h2>2B - <br>
+            <table>
+              <tr><td>5 * null</td><td>0</td></tr>
+              <tr><td>"3" - 1</td><td>2</td></tr>
+              <tr><td>"ten" * 2</td><td>NaN</td></tr>
+              <tr><td>false == 0</td><td>true</td></tr>
+            </table>
 
-            <div id="codes">
-            </div>
-            <div id="codes">
+            <h2>1|1c - Comparison</h2>2C - <br>
+            <table>
+              <tr><td>==</td><td>equal</td></tr>
+              <tr><td>!=</td><td>not equal</td></tr>
+              <tr><td>===</td><td>equal and same type</td></tr>
+              <tr><td>!==</td><td>not equal and same type</td></tr>
+              <tr><td><</td><td>less than</td></tr>
+              <tr><td>></td><td>greater than</td></tr>
+              <tr><td><=</td><td>less than or equal</td></tr>
+              <tr><td>>=</td><td>greater than or equal</td></tr>
+            </table>
 
-            </div>
-            <div id="codesExplained">
-              <p></p>
-            </div>
-          </div>
-        </div><!--/SECTION-language-->
+            <h2>1|1d - Operators</h2><br>
+            <table>
+              <tr><td>+</td><td>adding / concatenating</td></tr>
+              <tr><td>-</td><td>substraction</td></tr>
+              <tr><td>*</td><td>multiply</td></tr>
+              <tr><td>/</td><td>division</td></tr>
+              <tr><td>%</td><td>remainer</td></tr>
+            </table>
 
-      </div><!--/ROW-->
-    </div><!--/CONTAINER-->
+            <h2>1|1e - Reserved Keywords</h2><br>
+            <table>
+              <tr><td>break</td><td>case</td></tr>
+              <tr><td>catch</td><td>continue</td></tr>
+              <tr><td>debugger</td><td>default</td></tr>
+              <tr><td>delet</td><td>do</td></tr>
+              <tr><td>else</td><td>false</td></tr>
+              <tr><td>finally</td><td>for </td></tr>
+              <tr><td>function</td><td>if</td></tr>
+              <tr><td>implements</td><td>in</td></tr>
+              <tr><td>instanceof</td><td>interface</td></tr>
+              <tr><td>let</td><td>new</td></tr>
+              <tr><td>null</td><td>package</td></tr>
+              <tr><td>private</td><td>protect</td></tr>
+              <tr><td>public</td><td>return</td></tr>
+              <tr><td>stactic</td><td>switch</td></tr>
+              <tr><td>throw</td><td>true</td></tr>
+              <tr><td>try</td><td>typeof</td></tr>
+              <tr><td>var</td><td>void</td></tr>
+              <tr><td>while</td><td>whit</td></tr>
+              <tr><td>yield</td><td>this</td></tr>
+            </table>
+          </div><!--/TYPES-->
+
+          <div class="" id="progStruct">
+            <h2>1|2 - PROGRAM STRUCTURE</h2>
+
+            <h3>1|2a - Variables</h3>
+            <p>A variables is a memory holder, the program can refer to it value
+            at any time by simply calling it name which will point the value it has been allocated</p>
+
+            <div class="col-xs-12 col-md-12 col-lg-12" id="codeWrapper">
+              <div class="col-xs-12 col-md-6 col-lg-6" id="code">
+                <p>Variables can be declared in multiple ways.</p><br>
+                <p>1 - var x = null;</p><br>
+                <p>2 - x = 5;</p><br>
+                <p>3 - var y = 5 * 2;</p><br><br>
+
+                <p id="codeOutput">console.log(x); <br>output// 5</p>
+              </div>
+              <div class="col-xs-12 col-md-6 col-lg-6" id="codeExplained">
+                <p>The "var" <a id="code" href="">keyword</a> is short for variable and set "x" as a variable. <br>
+                  There are multiple ways to define a variable: <br>
+                - 1 x has been declared with a null value. <br>
+                - 2 x has been defined with a value of 5. <br>
+                - 3 x has been defined as an expression.</p>
+              </div>
+            </div><!--/codeWrapper-->
+            <p>Variables can be declared <i><b>locally</b></i> or <i><b>globally</b></i>: <br>
+              Locally - When declared with a block of code it can only be used (visible) within that block. i.e. it scope is limited<br>
+              Globally - If declared outside, it can be used by other blocks of codes within the program
+            </p>
+
+            <div class="col-xs-12 col-md-12 col-lg-12" id="cntrFlow">
+              <h3>Control Flow</h3>
+              <p>The control flow is present in many programming languages and JavavScript obeys the same rule. <br>
+                It allow as the name implies to control the flow of execution a script.
+                This is widely used in user <br>
+                input where conditions are set based on input. <br><br>
+                <b>Control Statements:</b> <br></p>
+                <b id="code">- if</b> - If a condition is true execute the block of code within it. An if only execute once<br>
+                <div class="col-xs-12 col-md-12 col-lg-12" id="codeWrapper">
+                  <div class="col-xs-12 col-md-6 col-lg-6" id="code">
+                    var x = 5;<br>
+                    if(x > 4){<br>
+                      &#009;console.log("x is greater than 4");<br>
+                    }<br><br>
+
+                    <p id="codeOutput">output// x is greater than 4 <br></p>
+                  </div>
+                </div>
+                <p>
+                  <b id="code">- else</b> - Else execute the alternative script, often if the if produce a false outcome. <br>
+                </p>
+                <div class="col-xs-12 col-md-12 col-lg-12" id="codeWrapper">
+                  <div class="col-xs-12 col-md-6 col-lg-6" id="code">
+                    var x = 5;<br>
+                    if(x < 4){<br>
+                      &#009;console.log("x is greater than 4");<br>
+                    }else{<br>
+                      &#009;console.log("x is not greater than 4");<br>
+                    }<br><br>
+
+                    <p id="codeOutput">output// x is not greater than 4 <br></p>
+                  </div>
+                </div>
+                <p>
+                  <b id="code">- else if</b> - Is used to define a sequence of options. <br>
+                </p>
+                <div class="col-xs-12 col-md-12 col-lg-12" id="codeWrapper">
+                  <div class="col-xs-12 col-md-6 col-lg-6" id="code">
+                    var x = 5;<br>
+                    if(x < 4){<br>
+                      &#009;console.log("x is less than 4");<br>
+                    }else if(x == 5){<br>
+                      &#009;console.log("x is equal to 5");<br>
+                    }else if(x > 6){<br>
+                      &#009;console.log("x is greater than 5");<br>
+                    }<br><br>
+
+                    <p id="codeOutput">output// x is equal to 5 <br></p>
+
+                  </div>
+                </div>
+                <p>
+                  <b id="code">- switch</b> - Similar to an if statement but condition takes more than on value. <br><br>
+                </p>
+                <div class="col-xs-12 col-md-12 col-lg-12" id="codeWrapper">
+                  <div class="col-xs-12 col-md-6 col-lg-6" id="code">
+                    switch(sunny){<br>
+                      case "sunny":<br>
+                      console.log("T-shirt day!");<br>
+                      break;<br><br>
+
+                      case "windy":<br>
+                      console.log("Coat day!");<br>
+                      break;<br><br>
+
+                      case "rainy":<br>
+                      console.log("Umbrella day!");<br>
+                      break;<br><br>
+
+                      default:<br>
+                      console.log("It is a Martian weather");<br>
+                      break;<br>
+                    }<br><br>
+                    <p id="codeOutput">output// <br> It is a T-shirt day</p>
+                  </div>
+                </div>
+                <p>
+                  <b>Loops</b><br>
+                  <b id="code">- while</b> - Again, similar to an if however instead of executing only once it loop through as long the statement is true. <br>
+                  A while loop is when the number of iterations to get true is unknown in advance. <br>
+                </p>
+
+                <div class="col-xs-12 col-md-12 col-lg-12" id="codeWrapper">
+                  <div class="col-xs-12 col-md-6 col-lg-6" id="code">
+                    var x = 0;<br>
+                    while(x < 3){<br>
+                      &#009;console.log(x);<br>
+                      x++;
+                    }<br><br>
+
+                    <p id="codeOutput">output// <br> 0 <br> 1 <br> 2 <br></p>
+                  </div>
+                </div>
+                <p>
+                  <b id="code">- for</b> - The <i id="code">for</i> loop is identical to the <i id="code">while</i>, the only difference is that the <i id="code">for</i> loop is more compact. <br>
+                  In a scenario where code minification is required the <i id="code">for</i> statement is preferable as it reduces the number of lines required to do the same job. <br>
+                  In a loop the condition is check at each iteration and if not true the count is incremented. <br>
+                </p>
+                <div class="col-xs-12 col-md-12 col-lg-12" id="codeWrapper">
+                  <div class="col-xs-12 col-md-6 col-lg-6" id="code">
+                    for(var x = 0; x < 3; x++){<br>
+                      &#009;console.log(x);<br>
+                    }<br><br>
+
+                    <p id="codeOutput">output// <br> 0 <br> 1 <br> 2 <br></p>
+                  </div>
+                </div>
+                <p>
+                  <b id="code">- do...while</b> - differs from the <i id="code">while</i> loop as the condition is tested at the end. <br>
+                  The <i id="code">do...while</i> always execute the statement it encloses at least once. <br>
+                </p>
+                <div class="col-xs-12 col-md-12 col-lg-12" id="codeWrapper">
+                  <div class="col-xs-12 col-md-6 col-lg-6" id="code">
+                    do{<br>
+                      var aName = prompt("Enter your name!") <br>
+                    }while (!aName);<br>
+                    console.log(aName);<br><br>
+                    <p id="codeOutput">output// whatever entered <br></p>
+                  </div>
+                </div>
+                <p>
+                  Unless the field is not blank it will keep asking for a name until provided.
+                </p>
+                <p>
+                  <b id="code">- break</b> - There are two ways to jump out of a statement, by producing a <i id="code">false</i> output or by using the <i id="code">break</i> statement.
+                </p>
+                <div class="col-xs-12 col-md-12 col-lg-12" id="codeWrapper">
+                  <div class="col-xs-12 col-md-6 col-lg-6" id="code">
+                    for(var current = 20; ; current++){<br>
+                      if(current % 7 == 0) <br>
+                      break;<br>
+                    } <br>
+                    console.log(current);<br><br>
+                    <p id="codeOutput">output// <br> 21 <br></p>
+
+                  </div>
+                </div>
+            </div><!--/cntrFlow-->
+
+            <div class="col-xs-12 col-md-12 col-lg-12" id="functns">
+              <h2>1|3 - Functions</h2>
+              <p>A function is a piece of code that groups codes that are related,
+                with the perspective to define a single reusable task. <br>
+              Wherever the same definition is required within the program the function can be called
+              e.g. <b id="code">functionName();</b>. <br>
+
+              Calling an undefined function will result in an error message being frown out. <br><br>
+
+              The naming convention stipulate that: <br>
+              - Two functions can't have the same name <br>
+              - It can contain letters, underscores and digit, but can't start with a digit <br>
+            </p>
+
+              <h3>Native functions</h3>
+              <div class="col-xs-12 col-md-12 col-lg-12" id="codeWrapper">
+                <div class="col-xs-12 col-md-6 col-lg-6" id="code">
+                  var x = 5; <br>
+                  1 - console.log(x); <br>
+                  2 - alert("The value of x is ", x); <br>
+                  3 - confirm("If OK press 'OK'"); <br>
+                  5 - console.log(Math.min(3, x) * 2); <br>
+                  6 - console.log(Math.max(10, 20)); <br>
+                </div>
+                <div class="col-xs-12 col-md-6 col-lg-6" id="codeExplained">
+
+                </div>
+              </div><!--/codeWrapper-->
+            </div><!--/functions-->
+          </div><!--/progStruct-->
+
+
+
+
+
+
+
+
+        </div><!--/LANGUAGE-->
+
+        <div class="section col-xs-12 col-md-12 col-lg-12" id="browser">
+        </div><!--/BROWSER-->
+
+        <div class="section col-xs-12 col-md-12 col-lg-12" id="backend">
+        </div><!--/BACKEND-->
+      </div><!--/MAIN ROW-->
+    </div><!--/MAIN CONTAINER-FLUID-->
+
+
+
+
+
     <!-- <a href="#" onclick="return false;" onmousedown="resetScroller('wrapper');" onmouseover="overTop()" onmouseout="outTop()">
       <div id="bTop"><b>&#94;</b></div>
     </a> -->
