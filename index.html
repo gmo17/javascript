@@ -97,12 +97,12 @@
                     <i>
                       "Common programming paradigms include: <br>
 
-                      imperative which allows side effects,<br>
-                      functional which disallows side effects,<br>
-                      declarative which does not state the order in which operations execute,<br>
-                      object-oriented which groups code together with the state the code modifies,<br>
-                      procedural which groups code into functions,<br>
-                      logic which has a particular style of execution model coupled to a particular style of syntax and grammar, and<br>
+                      imperative which allows side effects,
+                      functional which disallows side effects,
+                      declarative which does not state the order in which operations execute,
+                      object-oriented which groups code together with the state the code modifies,
+                      procedural which groups code into functions,
+                      logic which has a particular style of execution model coupled to a particular style of syntax and grammar, and
                       symbolic programming which has a particular style of syntax and grammar."
                     </i> <br>
                     <a href="https://en.wikipedia.org/wiki/Programming_paradigm#Multi-paradigm">read more...</a> <br>
@@ -110,30 +110,163 @@
                 <b>- Interpreted</b>, is a programming language that doesn't require compilation in order to run.<br>
               </p>
               <h2>The console.log() Function</h2>
-              <p>Is a useful tool to test JavavScript code snippets on the fly. <br>
+              <p>Is a useful tool to test JavavScript code snippets on the fly.
               It is part of the browser and can be opened on Windows or Mac by press F12, Command-Option-1 respectively.</p>
             </div>
           </div><!--/DEFINITION-->
         </div><!--/INTRODUCTION-->
 
         <div class="section col-xs-12 col-md-12 col-lg-12" id="language">
-          <h1>1 - LANGUAGE</h1>
-          <div class="col-xs-12 col-md-12 col-lg-12" id="types">
-            <h2>1|1a - Types</h2><br>
-            <table>
-              <th>Type</th><th>Description</th><th>Example</th>
-              <tr><td>Numbers</td><td>-</td><td>14</td></tr>
-              <tr><td>Special Numbers</td><td>Positive and negative infinity</td><td>-1, NaN</td></tr>
-              <tr><td>Strings</td><td>A serie of character representing a text, can also be nunbers</td><td>aString</td></tr>
-              <tr><td>Unary Operators</td><td></td><td>the typeof operator</td></tr>
-              <tr><td>Boolean</td><td>When a "yes" or "no" answer is required</td><td>true / false</td></tr>
-              <tr><td>Logical Operators</td><td>&&</td><td>T && F = flase</td></tr>
-              <tr><td>-</td><td>||</td><td>T || F = true</td>
-              </tr><tr><td>null / undefined</td><td>They don't carry values</td><td>Type has no value</td></tr>
-            </table>
-            <br><br>
+          <h1>1 - THE LANGUAGE</h1>
+          <div class="col-xs-12 col-md-12 col-lg-12" id="syntx">
+            <div class="col-xs-12 col-md-7 col-lg-7">
+              <h2>1|1a - Syntax</h2><br>
+              A programming syntax follows the same rule of any modern language, a syntax should
+              should always follow grammatical and structural rules of a specific language.
+              JavaScript syntax can be assimilated to programming languages such as Java or C++.
+            </div>
+          </div>
 
-            <h2>1|1b - Automatic Type Conversion</h2>2B - <br>
+          <div class="col-xs-12 col-md-12 col-lg-12" id="statmnt">
+            <div class="col-xs-12 col-md-7 col-lg-7">
+              <h2>1|1b - Statement</h2><br>
+              <p>
+                A program or script is constituted by series of instructions known as <i id="code">statements</i>.
+                In order for JavaScript to be able to interpret these statements they must follow all syntax rules.
+                A statement can be equated to a sentence in a modern language. Each statement should be placed on
+                a separate line or separated by semicolon(s). It is generally accepted that each statement is placed on line
+                and punctuated with a semicolon for better readability.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-xs-12 col-md-12 col-lg-12" id="comments">
+            <div class="col-xs-12 col-md-7 col-lg-7">
+              <h2>1|1c - Comments</h2><br>
+              JavaScript is no exception when it comes to commenting statements or snippets of codes.
+              Comments are notes useful to the programmer or subsequent ones. There two types of comments: <br>
+              <b>- A single line</b> <br>
+              <i>// I'm a single line_1 comments</i><br>
+              <i>// I'm a single line_2 comments</i><br><br>
+              <b>- Multiple lines</b> <br>
+              /*<br>
+              <i>This comment explains the reasoning behind this bloc of code.</i> <br>
+              <i>Subsequent lines can go below. </i><br>
+              */
+            </div>
+          </div>
+
+          <div class="col-xs-12 col-md-12 col-lg-12" id="varibls">
+            <div class="col-xs-12 col-md-12 col-lg-12">
+              <div class="col-xs-12 col-md-7 col-lg-7">
+                <h2>1|1d - Variables</h2><br>
+                <p>A variables is a memory holder, a variable is not fixed unlike string they can be changed.
+                  First they have to be declared i.e. given a name with or without a value <i id="code">null</i>.
+                  The act of giving it a value is known as assigning, once assigned the program can refer to a particular
+                  variable's value by simply calling it name. This will point to the value it has been allocated. <br><br>
+
+                  The keyword <i id="code">var</i> can hold multiple variable declarations with a comma separator. <br>
+                  <i id="code">var name = "aName", age = 100; //ect...</i><br>
+                  Very useful in large programs to reduce lines count. <br><br>
+                  <b>Variables naming convention:</b> <br>
+                  - Variable names are case-sensitive, <b>"name"</b> or <b>"Name"</b> will be considered as two different variables. <br>
+                  <i id="code">var name = "aName", age = 100;</i><br>
+                  <i id="code">var Name = "aName", age = 100;</i><br><br>
+
+                  - Variables names should not contain space, the space can be replaced by an underscore. <br>
+                  <i id="code">var a name = "aName", age = 100; //not valid</i><br>
+                  <i id="code">var a_name = "aName", age = 100; //valid</i><br><br>
+
+                  - Variables can only start with "_" or "$" <br>
+                  <i id="code">var _name = "aName", age = 100; //valid</i><br>
+                  <i id="code">var $name = "aName", age = 100; //valid</i><br>
+                </p>
+              </div>
+            </div>
+
+            <div class="col-xs-12 col-md-12 col-lg-12" id="codeWrapper">
+              <p>Variables can be declared in multiple ways.</p>
+              <div class="col-xs-12 col-md-6 col-lg-6" id="code">
+                <p>var x = null; //x has been declared with a null value.
+                </p>
+                <p>x = 5; //x contains/assigned 5</p>
+                <p>var y = x * 2; //x is used in an expression</p><br>
+                <p id="codeOutput">console.log(x); <br>output// 5</p>
+              </div>
+            </div><!--/codeWrapper-->
+            <div class="col-xs-12 col-md-7 col-lg-7">
+              <h3>Variable Scope</h3>
+            <p>Variables can be declared <i><b>locally</b></i> or <i><b>globally</b> i.e. defining their scope</i>: <br>
+              Locally - When declared within a block of code it can only be used (visible) within that. <br>
+              Globally - If declared outside, it can be referenced anywhere in the script.
+            </p>
+            </div>
+          </div>
+
+          <div class="col-xs-12 col-md-12 col-lg-12" id="types">
+            <h2>1|1e - Data Types</h2><br>
+            <div class="col-xs-12 col-md-12 col-lg-12">
+              <div class="col-xs-12 col-md-7 col-lg-7">
+                <p>
+                  Type are types of data being manipulated, JavaScript is known as weakly typed language as it
+                  doesn't require the type to be explicitly labelled in a variable declaration. Variables in weakly typed languages can change at any time.
+                  Opposite to Weakly typed there are strongly typed languages like Java, once a variable as been declared they can be
+                  changed but under some circumstances. <br>
+                </p>
+                <p>
+                  <b>Numbers - </b>Numeric value which can be whole, floating-point or negative numbers<br>
+            			var x = 9;<br>
+            			var y = 4.5;<br>
+            			conlole.log(x * y);<br>
+            			conlole.log(2.998 e8);//exponent number<br><br>
+                  <b>Arrays - </b>Variables that can hold set of values. Each value is called an element <br>
+                  <b>Objects - </b>Is is self-contained collection of data be it a property or a method. <br>
+                  Property is an object's variable and method is a function that can be invoked by the object. <br>
+                  <b>Special Numbers - </b>Positive and negative infinity-1, NaN <br><br>
+                  <b>Strings - </b>Series of character representing a text, can also be a number  or a word.
+                  A single and double quote can be used to mark a string, they simply have to match.
+                  Any character placed in between will be classed a string. Characters can be escaped when
+                  preceded by the <b>"\" e.g.</b> <br>
+                  <i id="code">
+                    "This is the first line \nAnd this is the second"<br><br>
+                    //output <br>
+                    This is the first line<br>
+                    And this is the second
+                  </i><br><br>
+                  The <b>"n"</b> stands for a new line.
+                  <i id="code">var str = "a string";<br>
+            			var str1 = "con", str2 = "cat", str3 = "e", str4 = "nate";<br>
+            			var concatenate = str1 + str2 + str3 + str4;<br>
+            			console.log(concatenate);<br><br></i>
+
+                  <b>Boolean - </b>Has two possible values true/false or "yes"/"no" <br>
+                  <b>Unary Operators </b>the typeof operator <br>
+            			<i id="code">
+                    console . log ( typeof x)<br>
+              			// number<br>
+              			console . log ( typeof "str")<br>
+              			// string<br>
+              			console . log ( - (10 - 2))<br>
+              			// -8<br><br>
+                  </i>
+                  <b>Logical Operators - </b>&& T && F = false, T || F = true<br>
+                  <i id="code">
+                    console . log ( true && false )<br>
+                    // false<br>
+                    console . log ( true && true )<br>
+                    // true<br>
+
+                    console . log ( false || true )<br>
+                    // true<br>
+                    console . log ( false || false )<br>
+                    // false
+                </i><br><br>
+                  <b>null / undefined - </b>Do not carry values, the type has no value <br>
+                </p>
+              </div>
+            </div>
+
+            <h2>1|1f - Automatic Type Conversion</h2><br>
             <table>
               <tr><td>5 * null</td><td>0</td></tr>
               <tr><td>"3" - 1</td><td>2</td></tr>
@@ -141,7 +274,7 @@
               <tr><td>false == 0</td><td>true</td></tr>
             </table>
 
-            <h2>1|1c - Comparison</h2>2C - <br>
+            <h2>1|1g - Comparison</h2><br>
             <table>
               <tr><td>==</td><td>equal</td></tr>
               <tr><td>!=</td><td>not equal</td></tr>
@@ -152,22 +285,31 @@
               <tr><td><=</td><td>less than or equal</td></tr>
               <tr><td>>=</td><td>greater than or equal</td></tr>
             </table>
+        		<br><i id="code">
+              console.log (3 > 2)<br>
+          		// true<br>
+          		console.log (3 < 2)<br>
+          		// false<br>
 
-            <h2>1|1d - Operators</h2><br>
+          		console.log ("Arun" < "Zztop")<br>
+          		// true<br>
+        		</i>
+
+            <h2>1|1h - Operators</h2><br>
             <table>
               <tr><td>+</td><td>adding / concatenating</td></tr>
-              <tr><td>-</td><td>substraction</td></tr>
+              <tr><td>-</td><td>subtraction</td></tr>
               <tr><td>*</td><td>multiply</td></tr>
               <tr><td>/</td><td>division</td></tr>
-              <tr><td>%</td><td>remainer</td></tr>
+              <tr><td>%</td><td>remainder</td></tr>
             </table>
 
-            <h2>1|1e - Reserved Keywords</h2><br>
+            <h2>1|1i - Reserved Keywords</h2><br>
             <table>
               <tr><td>break</td><td>case</td></tr>
               <tr><td>catch</td><td>continue</td></tr>
               <tr><td>debugger</td><td>default</td></tr>
-              <tr><td>delet</td><td>do</td></tr>
+              <tr><td>delete</td><td>do</td></tr>
               <tr><td>else</td><td>false</td></tr>
               <tr><td>finally</td><td>for </td></tr>
               <tr><td>function</td><td>if</td></tr>
@@ -177,7 +319,7 @@
               <tr><td>null</td><td>package</td></tr>
               <tr><td>private</td><td>protect</td></tr>
               <tr><td>public</td><td>return</td></tr>
-              <tr><td>stactic</td><td>switch</td></tr>
+              <tr><td>static</td><td>switch</td></tr>
               <tr><td>throw</td><td>true</td></tr>
               <tr><td>try</td><td>typeof</td></tr>
               <tr><td>var</td><td>void</td></tr>
@@ -185,41 +327,14 @@
               <tr><td>yield</td><td>this</td></tr>
             </table>
           </div><!--/TYPES-->
-
           <div class="" id="progStruct">
             <h2>1|2 - PROGRAM STRUCTURE</h2>
 
-            <h3>1|2a - Variables</h3>
-            <p>A variables is a memory holder, the program can refer to it value
-            at any time by simply calling it name which will point the value it has been allocated</p>
-
-            <div class="col-xs-12 col-md-12 col-lg-12" id="codeWrapper">
-              <div class="col-xs-12 col-md-6 col-lg-6" id="code">
-                <p>Variables can be declared in multiple ways.</p><br>
-                <p>1 - var x = null;</p><br>
-                <p>2 - x = 5;</p><br>
-                <p>3 - var y = 5 * 2;</p><br><br>
-
-                <p id="codeOutput">console.log(x); <br>output// 5</p>
-              </div>
-              <div class="col-xs-12 col-md-6 col-lg-6" id="codeExplained">
-                <p>The "var" <a id="code" href="">keyword</a> is short for variable and set "x" as a variable. <br>
-                  There are multiple ways to define a variable: <br>
-                - 1 x has been declared with a null value. <br>
-                - 2 x has been defined with a value of 5. <br>
-                - 3 x has been defined as an expression.</p>
-              </div>
-            </div><!--/codeWrapper-->
-            <p>Variables can be declared <i><b>locally</b></i> or <i><b>globally</b></i>: <br>
-              Locally - When declared with a block of code it can only be used (visible) within that block. i.e. it scope is limited<br>
-              Globally - If declared outside, it can be used by other blocks of codes within the program
-            </p>
-
             <div class="col-xs-12 col-md-12 col-lg-12" id="cntrFlow">
-              <h3>Control Flow</h3>
+              <h3>1|2a - Control Flow</h3>
               <p>The control flow is present in many programming languages and JavavScript obeys the same rule. <br>
                 It allow as the name implies to control the flow of execution a script.
-                This is widely used in user <br>
+                This is widely used in user
                 input where conditions are set based on input. <br><br>
                 <b>Control Statements:</b> <br></p>
                 <b id="code">- if</b> - If a condition is true execute the block of code within it. An if only execute once<br>
@@ -230,7 +345,7 @@
                       &#009;console.log("x is greater than 4");<br>
                     }<br><br>
 
-                    <p id="codeOutput">output// x is greater than 4 <br></p>
+                    <p id="codeOutput">output// x is greater than 4</p><br>
                   </div>
                 </div>
                 <p>
@@ -356,32 +471,17 @@
 
             <div class="col-xs-12 col-md-12 col-lg-12" id="functns">
               <h2>1|3 - Functions</h2>
-              <p>A function is a piece of code that groups codes that are related,
+              <p>A function is a piece of code that groups related statements,
                 with the perspective to define a single reusable task. <br>
-              Wherever the same definition is required within the program the function can be called
-              e.g. <b id="code">functionName();</b>. <br>
+                Wherever the same definition is required within the program the function can be invoked (called) <br>
+                e.g. <b id="code">functionName();</b>. <br>
 
-              Calling an undefined function will result in an error message being frown out. <br><br>
+                Calling an undefined function will result in an error message being frown out. <br><br>
 
-              The naming convention stipulate that: <br>
-              - Two functions can't have the same name <br>
-              - It can contain letters, underscores and digit, but can't start with a digit <br>
-            </p>
-
-              <h3>Native functions</h3>
-              <div class="col-xs-12 col-md-12 col-lg-12" id="codeWrapper">
-                <div class="col-xs-12 col-md-6 col-lg-6" id="code">
-                  var x = 5; <br>
-                  1 - console.log(x); <br>
-                  2 - alert("The value of x is ", x); <br>
-                  3 - confirm("If OK press 'OK'"); <br>
-                  5 - console.log(Math.min(3, x) * 2); <br>
-                  6 - console.log(Math.max(10, 20)); <br>
-                </div>
-                <div class="col-xs-12 col-md-6 col-lg-6" id="codeExplained">
-
-                </div>
-              </div><!--/codeWrapper-->
+                The naming convention stipulate that: <br>
+                - Two functions can't have the same name <br>
+                - It can contain letters, underscores and digit, but can't start with a digit <br>
+              </p>
             </div><!--/functions-->
           </div><!--/progStruct-->
 
@@ -412,7 +512,7 @@
     <div class="container-fluid">
       <div class="row">
         <div class="footer col-xs-12 col-md-12">
-          Copyright &#169; 2017 &#123;chevrondev&#125;&#46; All rights reserved&#46;
+          Copyright &#169; 2017 &#123;MG&#125;&#46; All rights reserved&#46;
         </div>
       </div>
     </div>
