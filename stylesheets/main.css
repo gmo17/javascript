@@ -1,0 +1,17 @@
+#bTop {
+   position:fixed;
+   bottom:0;
+   width: 60px;
+   padding: 1%;
+   text-align: center;
+   margin: 0 0 2% 80%;
+   display: none;
+   cursor: pointer;
+   z-index: 1;
+   background-color: #f00;
+   color: #fff;
+}
+
+#bTop a:visited {
+  color: #fff;
+}

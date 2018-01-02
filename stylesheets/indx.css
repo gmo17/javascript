@@ -1,0 +1,18 @@
+
+h1{
+  text-align: center;
+}
+
+.section{
+  padding: 2%;
+  margin-bottom: 5%;
+  /*min-height: 80px;*/
+}
+
+.section div{
+  margin-bottom: 2%;
+}
+
+.footer{
+  text-align: center;
+}
